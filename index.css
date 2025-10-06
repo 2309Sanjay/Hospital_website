@@ -1,0 +1,2413 @@
+/* font-family: "Archivo Black", sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Dancing+Script:wght@400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Lato", sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+main>section {
+    padding-top: 50px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+
+}
+
+nav .hospital-res {
+    display: none;
+}
+
+nav label {
+    display: none;
+
+}
+
+nav input {
+    display: none;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, #6784f1, lightblue 45%, #6784f1);
+}
+
+.nav-bar a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.nav-bar a:hover{
+    color: ghostwhite;
+}
+.nav-bar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hospital-img img {
+    height: 50px;
+    width: 50px;
+}
+
+.hospital-img a {
+    font-size: 1.7rem;
+    padding: 10px;
+}
+
+.nav-bar a::before {
+    content: "";
+    width: 0%;
+    height: 4%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transition: all 1s;
+}
+
+.nav-bar a:hover::before {
+    width: 100%;
+}
+
+/* HOME PAGE */
+
+.home {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-image: url("https://images.stockcake.com/public/3/f/e/3fe72cb6-687a-496b-8ca9-6e861d1b9aa4_large/futuristic-hospital-room-stockcake.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+.home-page {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 55px;
+}
+
+.home-content aside {
+    color: ghostwhite;
+    width: 500px;
+    transform-style: preserve-3d;
+}
+
+marquee {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+    -webkit-text-stroke: 1.5px black;
+
+}
+
+.home-content aside>p {
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+
+
+.home-content button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 20px;
+    background-color: #6784f1;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.home-content button:hover {
+    color: #004466;
+    background-color: ghostwhite;
+}
+
+.home-img {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 50%;
+    left: 5%;
+    position: relative;
+    border-left: 25px solid #6784f1;
+    border-right: 25px solid #6784f1;
+}
+
+.home-img img {
+    position: absolute;
+    left: 40px;
+    top: 0px;
+
+}
+
+/* HOME-SLIDE CONTAINER */
+
+.home-slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+    background-color: rgb(247, 247, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+    transform-style: preserve-3d;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+    * {
+        margin: 0px;
+    }
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+
+/* BOX 1 */
+.box1 {
+    background-color: transparent;
+}
+
+.box1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Box 2 */
+.box2 {
+    color: white;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #6784f1, lightblue);
+}
+
+.box2 button {
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 25px;
+}
+
+.box2 button:hover {
+    color: #6784f1;
+}
+
+.box .icon {
+    display: flex;
+    gap: 10px;
+}
+
+.box2 i {
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.box2 p,
+.box3 p {
+    font-size: 1.2rem;
+}
+
+/* BOX 3 */
+
+.box3 button {
+    border-radius: 20px;
+    border: none;
+    padding: 5px 25px;
+    font-weight: bold;
+    color: ghostwhite;
+    background-color: transparent;
+    background-image: linear-gradient(to top, #6784f1, lightblue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box3 button p {
+    font-size: 1.5rem;
+    transition: all 1s;
+}
+
+.box3 button:hover p {
+    transform: translate(18px);
+}
+
+.box3 button span {
+    font-size: 1rem;
+    display: block;
+    color: #6784f1;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all 1s;
+}
+
+.box3 button:hover span {
+    display: block;
+    transform: translatex(50px);
+    opacity: 0;
+}
+
+
+
+.box3,
+.box4 {
+    text-align: center;
+    color: black;
+}
+
+/* BOX 4 */
+
+
+.three-img {
+    margin: 0px 0px 50px 26px;
+    position: relative;
+}
+
+.three-img img {
+    position: absolute;
+}
+
+.three-img img:first-child {
+    left: -80px;
+}
+
+.three-img img:nth-child(2) {
+    top: 20px;
+    left: -40px;
+    z-index: 1;
+}
+
+/* ABOUT PAGE */
+
+.about {
+    min-height: 100vh;
+    padding: 50px 0px 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+}
+
+.about-left {
+    height: 400px;
+    z-index: 1;
+}
+
+.square {
+    height: 450px;
+    width: 450px;
+    border: 15px solid rgba(38, 148, 87, 0.825);
+    border-radius: 50px 50px 0px 0px;
+    transform: rotatez(50deg);
+}
+
+picture {
+    display: block;
+    height: 90%;
+    width: 90%;
+    position: relative;
+    top: 100px;
+    left: 5%;
+}
+
+picture div:first-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+
+}
+
+picture div:last-child {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 50px;
+    border: 20px solid white;
+    top: 200px;
+    left: -100px;
+}
+
+picture img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.dot {
+    position: absolute;
+    top: -10px;
+    left: 120px;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: -1;
+}
+
+.dot h6 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+/* Aside */
+
+.about aside {
+    width: 30%;
+    align-self: flex-start;
+}
+
+.about>h1 {
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgb(94, 140, 209), darkblue, rgb(72, 152, 223));
+}
+
+.about aside h2 {
+    font-size: 2.5rem;
+}
+
+.about button {
+    padding: 10px 0px 10px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to top, #6784f1, lightblue);
+    display: flex;
+    border-radius: 8px;
+    border: none;
+}
+
+.about button span {
+    font-size: 1rem;
+    display: block;
+    background-image: linear-gradient(to top, #6784f1, lightblue);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 15px;
+    border: 3.5px solid white;
+    transition: all 1.5s;
+}
+
+.about button:hover span {
+    left: 100px;
+    opacity: 0;
+    transform: skewX(-50deg);
+}
+
+/* DEPARTMENT PAGE */
+
+.department {
+    min-height: 150vh;
+    padding: 5%;
+    padding-top: 80px;
+}
+
+.department>h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgb(94, 140, 209), darkblue, rgb(72, 152, 223));
+    font-weight: bold;
+}
+
+.department .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contain {
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #6784f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    box-shadow: 15px 15px #6784f1;
+}
+
+.contain span {
+    font-size: 1.5rem;
+    display: block;
+    background-color: #6784f1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 130px;
+    top: -60px;
+    border: 5px solid white;
+    color: white;
+    transition: all 2s;
+}
+
+.contain:hover span {
+    transform: rotateY(180deg);
+}
+
+/* Medical infograghic */
+
+.medical {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.round {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding: 40px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50%;
+}
+
+/* LEFT HALF CIRCLE WITH SEGMENTS */
+.lefttt {
+    position: relative;
+}
+
+.left {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: ghostwhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 5px black;
+    z-index: 10;
+    left: -75px;
+}
+
+.segments {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    clip-path: circle(50% at 50% 50%);
+    z-index: 0;
+    top: -60px;
+    left: -100px;
+
+}
+
+.segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 0, 100% 50%);
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+.segment i {
+    font-size: 2rem;
+    color: red;
+}
+
+.seg1 {
+    background: #004466;
+    transform: rotate(-45deg);
+}
+
+.seg2 {
+    background: #006699;
+    transform: rotate(0deg);
+    top: 8px;
+}
+
+.seg3 {
+    background: #0099cc;
+    transform: rotate(45deg);
+    top: 12px;
+}
+
+.seg4 {
+    background: #00b3aa;
+    transform: rotate(90deg);
+    top: 20px;
+}
+
+
+/* CENTER TEXT */
+.center-text {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    width: 120px;
+}
+
+.center-text h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #004466;
+}
+
+.center-text small {
+    font-size: 12px;
+    color: #00b3aa;
+    margin-bottom: 5px;
+}
+
+.center-text p {
+    font-size: 10px;
+    color: #555;
+}
+
+/* RIGHT SIDE STEPS */
+.right {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.step {
+    background: ghostwhite;
+    border: 0.5px solid black;
+    border-radius: 30px 0px 0px;
+    padding: 15px;
+    width: 300px;
+    height: 80px;
+    position: relative;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step h5 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.step h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #004466;
+}
+
+.step p {
+    font-size: 8px;
+    color: #555;
+}
+
+.right .step:first-child {
+    box-shadow: inset -0px -15px #004466;
+}
+
+.right .step:nth-child(2) {
+    box-shadow: inset -0px -15px #006699;
+}
+
+.right .step:nth-child(3) {
+    box-shadow: inset -0px -15px #0099cc;
+}
+
+.right .step:last-child {
+    box-shadow: inset -0px -15px #00b3aa;
+}
+
+/* LINE BETWEEN */
+
+.container>p {
+    position: absolute;
+    height: 15px;
+    z-index: -1;
+    width: 450px;
+}
+
+.line1 {
+
+    top: 26px;
+    left: 180px;
+    background-color: #004466;
+}
+
+.line2 {
+
+    top: 138px;
+    left: 180px;
+    background-color: #006699;
+}
+
+.line3 {
+
+    top: 250px;
+    left: 180px;
+    background-color: #0099cc;
+}
+
+.line4 {
+    top: 364px;
+    left: 180px;
+    background-color: #00b3aa;
+}
+
+
+
+
+
+
+
+
+/* DOCTOR PAGE */
+.doctor {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.doctor>h1 {
+    font-size: 3rem;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgb(94, 140, 209), darkblue, rgb(72, 152, 223));
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.doctor>div:nth-child(2) {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    width: 330px;
+    height: 550px;
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+    box-shadow: 5px 5px 10px lightgrey;
+}
+
+.card-top {
+    height: 50%;
+    position: relative;
+
+}
+
+.card-top img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-top p {
+    padding: 2px 5px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 150px;
+    display: flex;
+    gap: 5px;
+    background-color: rgb(11, 216, 148);
+    color: white;
+}
+
+.card-bottom {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.doc-details {
+    height: 80%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.doc-details>p:first-child {
+    width: 90px;
+    font-size: 10px;
+    background-color: lightgrey;
+    border-radius: 3px;
+    padding: 2px 6px;
+    background-color: #b4bddc;
+    color: darkblue;
+}
+
+.doc-details h6 {
+    font-size: 1.5rem;
+}
+
+.doc-details h6+p {
+    font-size: 12px;
+}
+
+.doc-details>p:last-child {
+    display: flex;
+    gap: 10px;
+}
+
+.doc-details>p:last-child i {
+    font-size: 1.3rem;
+    color: rgb(11, 216, 148);
+}
+
+.card-btn {
+    display: flex;
+    gap: 1.5px;
+}
+
+.card-btn button {
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    background-color: rgb(144, 200, 144);
+    color: black;
+    border: solid rgb(144, 200, 144);
+    transform: perspective(500px);
+}
+
+.card-btn button:hover {
+    opacity: 0.8;
+}
+
+/* SERVICE PAGE */
+
+.service {
+    min-height: 100vh;
+    padding: 60px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.service>h1 {
+    font-size: 3rem;
+    font-size: bold;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgb(94, 140, 209), darkblue, rgb(72, 152, 223));
+
+}
+
+.service-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.service>p {
+    font-size: 1.2rem;
+    padding: 0px 5%;
+}
+
+.s-card {
+    width: 350px;
+    height: 480px;
+    background-color: white;
+    padding: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid darkgrey;
+    border-radius: 15px;
+}
+
+.s-card img {
+    height: 40%;
+    width: 100%;
+    filter: drop-shadow(5px 5px 4px lightgrey);
+}
+
+.s-card img+i {
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px rgb(70, 70, 70);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(58, 58, 235);
+    color: white;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 5px 5px 10px rgb(64, 64, 64);
+    position: absolute;
+    left: 33%;
+    top: 145px;
+}
+
+.s-card h2 {
+    padding-top: 23%;
+    font-size: 1.6rem;
+    color: rgb(58, 58, 235);
+    text-align: center;
+}
+
+.s-card p {
+    font-size: 12px;
+}
+
+.s-card div+i {
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px rgb(70, 70, 70);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px lightgrey;
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+    top: 94%;
+    transition: transform 1s, left 2s, opacity 2.5s, top 3s, font-size 2s;
+}
+
+.s-card:hover i {
+    transform: rotateZ(-90deg);
+    font-size: 5rem;
+    top: -20%;
+    opacity: 0;
+    background-color: unset;
+    box-shadow: none;
+
+}
+
+/* APPOINTMENT */
+
+.appointment {
+    min-height: 100vh;
+    padding: 60px 100px 0px;
+}
+
+.appointment h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgb(94, 140, 209), darkblue, rgb(72, 152, 223));
+}
+
+.appointment>div {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15%;
+}
+
+form {
+    width: 500px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+form>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form>div>div {
+    width: 50%;
+}
+
+form label {
+    font-size: 1.2rem;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.submit {
+    font-size: 1.5rem;
+    color: ghostwhite;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #0099cc;
+    border-radius: 30px;
+}
+
+.submit i {
+    transition: all 2s;
+}
+
+.submit:hover i {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.info {
+    width: 250px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info h4 {
+    font-size: 2.5rem;
+}
+
+.info img {
+    width: 100%;
+    height: 50%;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    * {
+        margin: 0px;
+    }
+}
+
+.info div p:last-child {
+    color: gray;
+}
+
+
+/* CONTACT PAGE */
+
+.contact {
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.prohealth {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    left: 44%;
+    background-color: rgb(90, 191, 232);
+    color: ghostwhite;
+    border-radius: 0px 0px 50% 50%;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(49% 0, 100% 21%, 100% 100%, 0 100%, 0 20%);
+    z-index: 1;
+}
+
+.prohealth i {
+    font-size: 2rem;
+}
+
+footer {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to top, rgb(105, 130, 177), lightblue);
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    clip-path: polygon(50% 0, 100% 32%, 100% 100%, 0 100%, 0 32%);
+    padding-bottom: 50px;
+}
+
+.contact-shade>div {
+    width: 30%;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.subcribe div {
+    width: 100%;
+    padding: 10px;
+    background-color: ghostwhite;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subcribe h1 {
+    font-size: 2.2rem;
+}
+
+.subcribe div p {
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.subcribe button {
+    font-size: 1.1rem;
+    color: ghostwhite;
+    padding: 5px 15px;
+    border: none;
+    background-color: #0099cc;
+    border-radius: 30px;
+}
+
+/* CUBE */
+
+.cubeee {
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    opacity: 0.1;
+
+}
+
+.cubeee .cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+}
+
+.cube>div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.cube>div>img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.top5 div,
+.top6 div {
+    background-color: red;
+    position: relative;
+    border-radius: 10px;
+}
+
+.top5 div:first-child,
+.top6 div:first-child {
+    width: 60px;
+    height: 100%;
+    margin: auto;
+}
+
+.top5 div:last-child,
+.top6 div:last-child {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 60px;
+    height: 100%;
+    left: 70px;
+
+}
+
+.top1 {
+    background-color: rgba(106, 90, 205, .6);
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.top2 {
+    background-color: rgba(46, 139, 87, .6);
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.top3 {
+    background-color: rgba(202, 61, 162, 0.6);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.top4 {
+    background-color: rgba(183, 61, 20, 0.6);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top5 {
+    background-color: white;
+    transform: rotateX(-180deg) translateZ(100px);
+}
+
+.top6 {
+    background-color: white;
+    transform: rotateX(0deg) translateZ(100px);
+}
+
+/* EXTRA CSS */
+
+button {
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+
+@media screen and (min-width:768) {}
+
+
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+
+    .nav-bar a {
+        font-size: 1.1rem;
+    }
+
+    /* HOME PAGE */
+    .home {
+        min-height: 1000px;
+    }
+
+    .home-page {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSId1CrdFN_cfNP3r7I7ZSe-kttKZJFj8fP9A&s");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    video {
+        display: none;
+    }
+
+    .home-content aside {
+        width: 370px;
+        justify-content: center;
+    }
+
+    marquee {
+        font-size: 2rem;
+    }
+
+    .home-content aside>p {
+        font-size: 1rem;
+    }
+
+    .home-img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .home-img img {
+        width: 100%;
+        left: 10px;
+    }
+
+    .home-slide {
+        padding-bottom: 50px;
+    }
+
+    /* ABOUT PAGE */
+    .about {
+        min-height: 800px;
+    }
+
+    .square {
+        height: 300px;
+        width: 300px;
+    }
+
+    picture {
+        top: 50px;
+    }
+
+    picture div:last-child {
+
+        top: 160px;
+        left: -50px;
+    }
+
+    .dot h6 {
+        height: 18px;
+        width: 18px;
+    }
+
+
+
+    /* DEPARTMENT PAGE */
+
+    .medical {
+        justify-content: center;
+        min-height: 400px;
+    }
+
+    .left {
+        width: 200px;
+        height: 200px;
+    }
+
+    .segments {
+        height: 250px;
+        width: 250px;
+        top: -26px;
+        left: -75px;
+    }
+
+    .round {
+        flex-wrap: unset;
+    }
+
+    .container {
+        flex-wrap: unset;
+        gap: 25%;
+    }
+
+    .step {
+        width: 180px;
+        height: 50px;
+        border-radius: 15px 0px 0px;
+        padding: 15px;
+    }
+
+    .step h5 {
+        font-size: 1rem;
+    }
+
+    .step h3 {
+        font-size: 0.8rem;
+    }
+
+    .step p {
+        font-size: 5px;
+    }
+
+    .right {
+        gap: 15px;
+    }
+
+    .right .step:first-child {
+        box-shadow: inset -0px -8px #004466;
+    }
+
+    .right .step:nth-child(2) {
+        box-shadow: inset -0px -8px #006699;
+    }
+
+    .right .step:nth-child(3) {
+        box-shadow: inset -0px -8px #0099cc;
+    }
+
+    .right .step:last-child {
+        box-shadow: inset -0px -8px #00b3aa;
+    }
+
+    /* LINE BETWEEN */
+
+    .container>p {
+        height: 8px;
+        width: 220px;
+    }
+
+    .line1 {
+
+        top: 15px;
+        left: 112px;
+        background-color: #004466;
+    }
+
+    .line2 {
+
+        top: 92px;
+        left: 130px;
+        background-color: #006699;
+    }
+
+    .line3 {
+
+        top: 155px;
+        left: 130px;
+        background-color: #0099cc;
+    }
+
+    .line4 {
+        top: 224px;
+        left: 112px;
+        background-color: #00b3aa;
+    }
+
+    /* CONTACT PAGE  */
+
+
+    /* FOOTER */
+    footer {
+        height: 350px;
+    }
+
+    .prohealth {
+        height: 100px;
+        width: 100px;
+        font-size: 1rem;
+        top: 45%;
+        left: 45%;
+    }
+
+    /* MEDICAL-CENTER */
+    .medical-center h2 {
+        font-size: 1rem;
+    }
+
+    .medical-center p {
+        font-size: 0.8rem;
+    }
+
+    .middle p {
+        font-size: 0.8rem;
+    }
+
+    /* FOOTER-SUBCRIBE */
+    .subcribe h1 {
+        font-size: 1.5rem;
+    }
+
+    .subcribe>p {
+        font-size: 0.8rem;
+    }
+
+    .subcribe div {
+        padding: 7px;
+    }
+
+    .subcribe div p {
+        font-size: 0.8rem;
+    }
+
+    .subcribe button {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 850px) {
+
+
+    main>section {
+        padding: unset;
+    }
+
+    nav {
+        width: 95%;
+        height: 50px;
+        background-color: rgb(69, 143, 218);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        top: 15px;
+        left: 2.5%;
+
+    }
+
+    nav .hospital-res {
+        display: unset;
+
+    }
+
+    .hospital-res img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .hospital-res a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    nav label {
+        display: unset;
+        font-size: 2rem;
+        color: ghostwhite;
+    }
+
+    nav input:checked~.nav-bar {
+        left: 5%;
+    }
+
+    .nav-bar {
+        height: 52vh;
+        position: fixed;
+        top: 100px;
+        left: 101%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 90%;
+        border-radius: 20px;
+        border: #6784f1 solid;
+        padding-top: 20px;
+    }
+
+    .nav-bar a {
+        height: unset;
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+    .nav-bar a:hover {
+        width: 100%;
+        background-color: white;
+        color: #004466;
+    }
+
+    .nav-bar div {
+        display: none;
+    }
+
+    .nav-bar a::before {
+        display: none;
+    }
+
+
+    /* HOME PAGE */
+    .home {
+        min-height: 1450px;
+        background-image: linear-gradient(to right, cornflowerblue, lightblue, cornflowerblue);
+    }
+
+    video {
+        display: none;
+    }
+
+    .home-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .box {
+        filter: drop-shadow(3px 3px 4px lightgrey);
+    }
+
+    /* ABOUT PAGE */
+
+    .about {
+        min-height: 1000px;
+    }
+
+    .about-content {
+        gap: 0;
+    }
+
+    .about aside {
+        width: 80%;
+        margin: auto;
+    }
+
+    .square {
+        height: 250px;
+        width: 250px;
+        transform: rotatez(50deg);
+
+    }
+
+    picture {
+        height: 200px;
+        width: 200px;
+        top: 0px;
+    }
+
+    picture div:first-child {
+        position: relative;
+        height: 190px;
+        width: 190px;
+        left: 0px;
+        top: 60px;
+
+    }
+
+    picture div:last-child {
+        position: relative;
+        height: 80px;
+        width: 80px;
+        border-radius: 25px;
+        border: 10px solid white;
+        left: -35px;
+        top: 0px;
+    }
+
+    picture img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .dot {
+        top: 0px;
+        left: 200px;
+        height: 100px;
+        width: 150px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .dot h6 {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: lightgrey;
+    }
+
+
+    /* DEPARTMENT PAGE */
+
+    .department {}
+
+    .container {}
+
+    /* Medical infographic */
+
+    .medical {
+        justify-content: center;
+    }
+
+    .left {
+        width: 200px;
+        height: 200px;
+    }
+
+    .segments {
+        height: 250px;
+        width: 250px;
+        top: -26px;
+        left: -75px;
+    }
+
+    .round {
+        flex-wrap: unset;
+    }
+
+    .container {
+        flex-wrap: unset;
+        gap: 25%;
+    }
+
+    .step {
+        width: 180px;
+        height: 50px;
+        border-radius: 15px 0px 0px;
+        padding: 15px;
+    }
+
+    .step h5 {
+        font-size: 1rem;
+    }
+
+    .step h3 {
+        font-size: 0.8rem;
+    }
+
+    .step p {
+        font-size: 5px;
+    }
+
+    .right {
+        gap: 15px;
+    }
+
+    .right .step:first-child {
+        box-shadow: inset -0px -8px #004466;
+    }
+
+    .right .step:nth-child(2) {
+        box-shadow: inset -0px -8px #006699;
+    }
+
+    .right .step:nth-child(3) {
+        box-shadow: inset -0px -8px #0099cc;
+    }
+
+    .right .step:last-child {
+        box-shadow: inset -0px -8px #00b3aa;
+    }
+
+    /* LINE BETWEEN */
+
+    .container>p {
+        height: 8px;
+        width: 220px;
+    }
+
+    .line1 {
+
+        top: 15px;
+        left: 112px;
+        background-color: #004466;
+    }
+
+    .line2 {
+
+        top: 92px;
+        left: 130px;
+        background-color: #006699;
+    }
+
+    .line3 {
+
+        top: 155px;
+        left: 130px;
+        background-color: #0099cc;
+    }
+
+    .line4 {
+        top: 224px;
+        left: 112px;
+        background-color: #00b3aa;
+    }
+
+    /* DOCTORS PAGE */
+
+    .doctor {}
+
+
+    /* CONTACT PAGE  */
+
+
+    /* FOOTER */
+    footer {
+        height: 350px;
+    }
+
+    .prohealth {
+        height: 100px;
+        width: 100px;
+        font-size: 1rem;
+        top: 45%;
+        left: 44%;
+    }
+
+    /* MEDICAL-CENTER */
+    .medical-center h2 {
+        font-size: 0.8rem;
+    }
+
+    .medical-center p {
+        font-size: 0.5rem;
+    }
+
+    .middle p {
+        font-size: 0.5rem;
+    }
+
+    /* FOOTER-SUBCRIBE */
+
+    .subcribe h1 {
+        font-size: 1rem;
+    }
+
+    .subcribe>p {
+        font-size: 0.7rem;
+    }
+
+    .subcribe div {
+        padding: 3px;
+    }
+
+    .subcribe div p {
+        font-size: 0.6rem;
+    }
+
+    .subcribe button {
+        font-size: 0.6rem;
+    }
+
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+
+    /* HOME PAGE */
+    .home {
+        min-height: 1900px;
+    }
+
+    .home-page {
+        top: 50px;
+    }
+
+    .home-content aside {
+        width: 80%;
+    }
+
+    marquee {
+        font-size: 1.5rem;
+    }
+
+    .home-content aside>p {
+        font-size: 0.9rem;
+    }
+
+    /* DEPARTMENT PAGE */
+
+    .medical {
+        justify-content: center;
+    }
+
+    .left {
+        width: 160px;
+        height: 160px;
+    }
+
+    .segments {
+        height: 200px;
+        width: 200px;
+        top: -20px;
+        left: -85px;
+    }
+
+    .round {
+        flex-wrap: unset;
+    }
+
+    .container {
+        flex-wrap: unset;
+        gap: 6%;
+    }
+
+    .step {
+        width: 180px;
+        height: 50px;
+        border-radius: 15px 0px 0px;
+        padding: 8px;
+    }
+
+    .step h5 {
+        font-size: 1rem;
+    }
+
+    .step h3 {
+        font-size: 0.8rem;
+    }
+
+    .step p {
+        font-size: 5px;
+    }
+
+    .right {
+        gap: 8px;
+    }
+
+    .right .step:first-child {
+        box-shadow: inset -0px -8px #004466;
+    }
+
+    .right .step:nth-child(2) {
+        box-shadow: inset -0px -8px #006699;
+    }
+
+    .right .step:nth-child(3) {
+        box-shadow: inset -0px -8px #0099cc;
+    }
+
+    .right .step:last-child {
+        box-shadow: inset -0px -8px #00b3aa;
+    }
+
+    /* LINE BETWEEN */
+
+    .container>p {
+        height: 7px;
+    }
+
+    .line1 {
+
+        top: 25px;
+        left: 72px;
+        background-color: #004466;
+    }
+
+    .line2 {
+
+        top: 82px;
+        left: 116px;
+        background-color: #006699;
+    }
+
+    .line3 {
+
+        top: 145px;
+        left: 110px;
+        background-color: #0099cc;
+    }
+
+    .line4 {
+        top: 193px;
+        left: 62px;
+        background-color: #00b3aa;
+    }
+
+    .prohealth {
+        left: 40%;
+    }
+
+    /* FOOTER-SUBCRIBE */
+
+    .subcribe h1 {
+        font-size: 0.9rem;
+    }
+
+    .subcribe>p {
+        font-size: 0.6rem;
+    }
+
+    .subcribe div {
+        padding: 2px;
+    }
+
+    .subcribe div p {
+        font-size: 0.5rem;
+    }
+
+    .subcribe button {
+        padding: 2px 10px;
+        font-size: 0.5rem;
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    main>section {
+        padding-top: unset;
+    }
+
+    nav {
+        width: 95%;
+        height: 50px;
+        background-color: #6785f17b;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        top: 15px;
+        left: 2.5%;
+
+    }
+
+    nav .hospital-res {
+        display: unset;
+
+    }
+
+    .hospital-res img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .hospital-res a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: white;
+    }
+
+    nav label {
+        display: unset;
+        font-size: 2rem;
+        color: ghostwhite;
+    }
+
+    nav input:checked~.nav-bar {
+        left: 5%;
+    }
+
+    .nav-bar {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSId1CrdFN_cfNP3r7I7ZSe-kttKZJFj8fP9A&s");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        position: fixed;
+        top: 100px;
+        left: 101%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 90%;
+        border-radius: 20px;
+        border: #6785f1 solid;
+        padding: 20px 0px;
+
+    }
+
+    .nav-bar a {
+        height: unset;
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+        color: ghostwhite;
+    }
+
+    .nav-bar a:hover {
+        width: 100%;
+        background-color: white;
+        color: #004466;
+    }
+
+    .nav-bar div {
+        display: none;
+    }
+
+    .nav-bar a::before {
+        display: none;
+    }
+
+
+    /* HOME PAGE */
+    .home {
+        min-height: 1800px;
+        background-image: linear-gradient(to right, rgb(65, 65, 201), rgb(56, 154, 196), rgb(68, 68, 192));
+        box-shadow: inset 1px 1px 500px lightseagreen;
+    }
+
+    video {
+        display: none;
+    }
+
+    .home-content {
+        flex-direction: column;
+        padding: 100px 10px;
+        gap: 20px;
+    }
+
+    .home-content aside {
+        width: 100%;
+    }
+
+    marquee {
+        font-size: 1.2rem;
+        width: 100%;
+        text-shadow: unset;
+        -webkit-text-stroke: unset;
+    }
+
+    .home-content aside>p {
+        font-size: 0.8rem;
+        text-shadow: unset;
+    }
+
+    .home-img {
+        height: 200px;
+        width: 70%;
+        border-left: 12px solid #6784f1;
+        border-right: 12px solid #6784f1;
+    }
+
+    .home-img img {
+        left: 0px;
+        height: 400px;
+    }
+
+    .box {
+        filter: drop-shadow(3px 3px 4px lightgrey);
+    }
+
+    /* ABOUT PAGE */
+
+    .about {
+        min-height: 1150px;
+    }
+
+    .about-content {
+        gap: 0;
+    }
+
+    .about aside {
+        width: 80%;
+        margin: auto;
+    }
+
+    .square {
+        left: 100px;
+        height: 200px;
+        width: 200px;
+        transform: rotatez(50deg);
+
+    }
+
+    picture {
+        height: 200px;
+        width: 200px;
+        top: 0px;
+    }
+
+    picture div:first-child {
+        position: relative;
+        height: 190px;
+        width: 190px;
+        left: 0px;
+        top: 20px;
+
+    }
+
+    picture div:last-child {
+        position: relative;
+        height: 80px;
+        width: 80px;
+        border-radius: 25px;
+        border: 10px solid white;
+        left: -35px;
+        top: -50px;
+    }
+
+    picture img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .dot {
+        top: 0px;
+        left: 50px;
+        height: 100px;
+        width: 150px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .dot h6 {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: lightgrey;
+    }
+
+
+    /* DEPARTMENT PAGE */
+
+    .department>h1 {
+        font-size: 2rem;
+    }
+
+    .medical {
+        justify-content: center;
+        min-height: 400px;
+        align-items: center;
+    }
+
+    .left {
+        width: 200px;
+        height: 200px;
+        left: 0px;
+    }
+
+    .segments {
+        display: none;
+    }
+
+    .round {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .container {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .step {
+        width: 180px;
+        height: 50px;
+        border-radius: 15px 0px 0px;
+        padding: 15px;
+    }
+
+    .step h5 {
+        font-size: 1rem;
+    }
+
+    .step h3 {
+        font-size: 0.8rem;
+    }
+
+    .step p {
+        font-size: 5px;
+    }
+
+    .right {
+        gap: 15px;
+    }
+
+    .right .step:first-child {
+        box-shadow: inset -0px -8px #004466;
+    }
+
+    .right .step:nth-child(2) {
+        box-shadow: inset -0px -8px #006699;
+    }
+
+    .right .step:nth-child(3) {
+        box-shadow: inset -0px -8px #0099cc;
+    }
+
+    .right .step:last-child {
+        box-shadow: inset -0px -8px #00b3aa;
+    }
+
+    .container>p {
+        display: none;
+    }
+
+
+
+
+    /* DOCTORS PAGE */
+
+    .doctor {
+        padding: 70px 10px 0px;
+    }
+
+    /* SERVICE PAGE */
+
+    .service-card {
+        gap: 50px;
+    }
+
+    /* APPOINTMENT PAGE */
+
+    .appointment {
+        min-height: ;
+        padding: 100px 10%;
+    }
+
+    .appointment>h1 {
+        font-size: 2rem;
+    }
+
+    .appointment>div {
+        gap: 50px;
+    }
+
+    form {}
+
+    form>div {
+        flex-direction: column;
+    }
+
+    form>div>div {
+        width: 100%;
+    }
+
+    .submit {
+        font-size: 1rem;
+    }
+
+
+    /* CONTACT PAGE */
+    .contact {}
+
+    .prohealth {
+        height: 100px;
+        width: 100px;
+        font-size: 1rem;
+        top: 7%;
+        left: 35%;
+    }
+
+    footer {
+        clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 15px 15px;
+    }
+
+    .contact-shade>div {
+        width: 100%;
+    }
+
+
+    /* MEDICAL-CENTER */
+    .medical-center h2 {
+        font-size: 1rem;
+    }
+
+    .medical-center p {
+        font-size: 0.8rem;
+    }
+
+    .middle p {
+        font-size: 0.8rem;
+    }
+
+    /* FOOTER-SUBCRIBE */
+
+    .subcribe h1 {
+        font-size: 1rem;
+    }
+
+    .subcribe>p {
+        font-size: 0.7rem;
+    }
+
+    .subcribe div {
+        padding: 3px;
+    }
+
+    .subcribe div p {
+        font-size: 0.6rem;
+    }
+
+    .subcribe button {
+        font-size: 0.6rem;
+    }
+
+    /* CUBE */
+
+    .cube {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 1100px) {
+    
+    .prohealth{
+        top: 51%;
+        left: 44%;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 550px) {
+    
+    .prohealth{
+        top: 52%;
+        left: 40.5%;
+    }
+}
